@@ -1,0 +1,178 @@
+@import url('https:fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif ;
+}
+body{
+    background-image: url("2IMAGE.jpeg");
+    background-size: cover;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-position: center;   
+    margin: 0;
+   
+}
+body header{
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    color: aqua;
+    font-size: 30px;
+    display: flex;
+    padding: 1em;
+    
+}
+p{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bolder;
+    
+}
+h1, h2,h3,h4,h5{
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    color: rgb(13, 2, 24);
+    display: flex;
+    font-weight: bolder;
+   
+}
+.container{
+    display: absolute;
+   justify-content: center;
+   align-items: center;
+   min-height: 50vh;
+}
+
+.wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;; 
+}
+.nav{
+    position: fixed;
+    top: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10cm;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39,0.6), transprent);
+    z-index: 100;
+    word-spacing: 100px;
+    
+
+}
+.nav-logo p{
+    color: blueviolet;
+    font-size: 25px;
+    font-weight: 600 ;
+    position: center;
+    padding-top:0 ;
+}
+.nav-menu ul{
+    display: flex;
+    padding-left: 10%;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 600;
+    color: blueviolet;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid grey;
+}
+.nav-button{
+    padding-left: 55%;
+}
+.nav-button .btn{
+    width :130px; 
+    height: 40px;
+    font-weight: 600;
+    background: grey;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 3s;
+    padding: 10px 20px;
+}
+.btn:hover{
+    background: cornflowerblue;
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white.btn{
+    background: cornflowerblue;
+}
+.btn.btn.white.btn:hover{
+    background: cadetblue;
+}
+.nav-menu-btn{
+    display: none ;
+}
+
+@media only screen and (max-width:786px){
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -800px;
+        display:flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+@media only screen and  (max-width: 540px){
+  .wrapper{
+    min-height: 100vh;
+  }
+  .form-box{
+    width:100%;
+    padding: 0 20px;
+  }
+  .register-container, .login-container{
+    width:100%;
+    padding: 0 20px;
+  }
+  .register-container .two-forms{
+    flex-direction: column;
+    gap: 0;
+  }
+}
